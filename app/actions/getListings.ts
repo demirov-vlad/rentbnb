@@ -1,6 +1,8 @@
 import prisma from "@/app/libs/prismadb";
 import { param } from "ts-interface-checker";
 
+export const dynamic = "force-dynamic";
+
 export interface IListingsParams {
   userId?: string;
   guestCount?: number;
