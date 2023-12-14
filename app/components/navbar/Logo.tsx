@@ -6,14 +6,19 @@ import Container from "@/app/components/Container";
 const Logo = () => {
   const router = useRouter();
   return (
-    <Image
+    <div
       onClick={() => router.push("/")}
-      src="/images/logo.png"
-      alt="Logo"
-      height="100"
-      width="100"
-      className="hidden md:block cursor-pointer"
-    />
+      className="flex flex-row items-center gap-2 font-semibold text-rose-500 text-2xl cursor-pointer"
+    >
+      <Image
+        src="/images/logo.png"
+        alt="Logo"
+        height="30"
+        width="30"
+        className="hidden md:block cursor-pointer"
+      />
+      rentbnb
+    </div>
   );
 };
 
